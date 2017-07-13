@@ -43,7 +43,7 @@
         });
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:1
-        }).fitBounds([[8.91764296264,5.73233620287],[11.5547200626,10.4002657822]]);
+        }).fitBounds([[8.18836537947,1.67658713526],[10.8254424795,6.34930269842]]);
         var hash = new L.Hash(map);
         map.attributionControl.addAttribution('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a>');
         var bounds_group = new L.featureGroup([]);
@@ -66,8 +66,7 @@
         function pop_LGAsKaduna0(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <th scope="row">NAME2_</th>\
-                        <td>' + (feature.properties['NAME2_'] !== null ? Autolinker.link(String(feature.properties['NAME2_'])) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['NAME2_'] !== null ? Autolinker.link(String(feature.properties['NAME2_'])) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['POINTS_'] !== null ? Autolinker.link(String(feature.properties['POINTS_'])) : '') + '</td>\
@@ -97,131 +96,79 @@
                         <td colspan="2">' + (feature.properties['Kd_Skilled'] !== null ? Autolinker.link(String(feature.properties['Kd_Skilled'])) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['solid_fuel_LGA'] !== null ? Autolinker.link(String(feature.properties['solid_fuel_LGA'])) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['improved_drinking_water_LGA'] !== null ? Autolinker.link(String(feature.properties['improved_drinking_water_LGA'])) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['solid_fuel_SOLID_FUEL'] !== null ? Autolinker.link(String(feature.properties['solid_fuel_SOLID_FUEL'])) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['improved_drinking_water_IMPROVED_DRINKING_WATER'] !== null ? Autolinker.link(String(feature.properties['improved_drinking_water_IMPROVED_DRINKING_WATER'])) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent);
         }
 
         function style_LGAsKaduna0_0(feature) {
-            if (feature.properties['solid_fuel_SOLID_FUEL'] >= 54.400000 && feature.properties['solid_fuel_SOLID_FUEL'] <= 59.466667 ) {
+            if (feature.properties['improved_drinking_water_IMPROVED_DRINKING_WATER'] >= 22.800000 && feature.properties['improved_drinking_water_IMPROVED_DRINKING_WATER'] <= 35.940000 ) {
                 return {
                 pane: 'pane_LGAsKaduna0',
                 opacity: 1,
-                color: 'rgba(0,0,0,0.56)',
+                color: 'rgba(0,0,0,0.59)',
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fillOpacity: 1,
-                fillColor: 'rgba(247,251,255,0.56)',
+                fillColor: 'rgba(247,251,255,0.59)',
             }
             }
-            if (feature.properties['solid_fuel_SOLID_FUEL'] >= 59.466667 && feature.properties['solid_fuel_SOLID_FUEL'] <= 64.533333 ) {
+            if (feature.properties['improved_drinking_water_IMPROVED_DRINKING_WATER'] >= 35.940000 && feature.properties['improved_drinking_water_IMPROVED_DRINKING_WATER'] <= 49.080000 ) {
                 return {
                 pane: 'pane_LGAsKaduna0',
                 opacity: 1,
-                color: 'rgba(0,0,0,0.56)',
+                color: 'rgba(0,0,0,0.59)',
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fillOpacity: 1,
-                fillColor: 'rgba(223,236,248,0.56)',
+                fillColor: 'rgba(200,221,240,0.59)',
             }
             }
-            if (feature.properties['solid_fuel_SOLID_FUEL'] >= 64.533333 && feature.properties['solid_fuel_SOLID_FUEL'] <= 69.600000 ) {
+            if (feature.properties['improved_drinking_water_IMPROVED_DRINKING_WATER'] >= 49.080000 && feature.properties['improved_drinking_water_IMPROVED_DRINKING_WATER'] <= 62.220000 ) {
                 return {
                 pane: 'pane_LGAsKaduna0',
                 opacity: 1,
-                color: 'rgba(0,0,0,0.56)',
+                color: 'rgba(0,0,0,0.59)',
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fillOpacity: 1,
-                fillColor: 'rgba(200,221,240,0.56)',
+                fillColor: 'rgba(115,179,216,0.59)',
             }
             }
-            if (feature.properties['solid_fuel_SOLID_FUEL'] >= 69.600000 && feature.properties['solid_fuel_SOLID_FUEL'] <= 74.666667 ) {
+            if (feature.properties['improved_drinking_water_IMPROVED_DRINKING_WATER'] >= 62.220000 && feature.properties['improved_drinking_water_IMPROVED_DRINKING_WATER'] <= 75.360000 ) {
                 return {
                 pane: 'pane_LGAsKaduna0',
                 opacity: 1,
-                color: 'rgba(0,0,0,0.56)',
+                color: 'rgba(0,0,0,0.59)',
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fillOpacity: 1,
-                fillColor: 'rgba(163,204,227,0.56)',
+                fillColor: 'rgba(40,121,185,0.59)',
             }
             }
-            if (feature.properties['solid_fuel_SOLID_FUEL'] >= 74.666667 && feature.properties['solid_fuel_SOLID_FUEL'] <= 79.733333 ) {
+            if (feature.properties['improved_drinking_water_IMPROVED_DRINKING_WATER'] >= 75.360000 && feature.properties['improved_drinking_water_IMPROVED_DRINKING_WATER'] <= 88.500000 ) {
                 return {
                 pane: 'pane_LGAsKaduna0',
                 opacity: 1,
-                color: 'rgba(0,0,0,0.56)',
+                color: 'rgba(0,0,0,0.59)',
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fillOpacity: 1,
-                fillColor: 'rgba(115,179,216,0.56)',
-            }
-            }
-            if (feature.properties['solid_fuel_SOLID_FUEL'] >= 79.733333 && feature.properties['solid_fuel_SOLID_FUEL'] <= 84.800000 ) {
-                return {
-                pane: 'pane_LGAsKaduna0',
-                opacity: 1,
-                color: 'rgba(0,0,0,0.56)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1.0, 
-                fillOpacity: 1,
-                fillColor: 'rgba(74,151,201,0.56)',
-            }
-            }
-            if (feature.properties['solid_fuel_SOLID_FUEL'] >= 84.800000 && feature.properties['solid_fuel_SOLID_FUEL'] <= 89.866667 ) {
-                return {
-                pane: 'pane_LGAsKaduna0',
-                opacity: 1,
-                color: 'rgba(0,0,0,0.56)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1.0, 
-                fillOpacity: 1,
-                fillColor: 'rgba(40,121,185,0.56)',
-            }
-            }
-            if (feature.properties['solid_fuel_SOLID_FUEL'] >= 89.866667 && feature.properties['solid_fuel_SOLID_FUEL'] <= 94.933333 ) {
-                return {
-                pane: 'pane_LGAsKaduna0',
-                opacity: 1,
-                color: 'rgba(0,0,0,0.56)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1.0, 
-                fillOpacity: 1,
-                fillColor: 'rgba(13,88,161,0.56)',
-            }
-            }
-            if (feature.properties['solid_fuel_SOLID_FUEL'] >= 94.933333 && feature.properties['solid_fuel_SOLID_FUEL'] <= 100.000000 ) {
-                return {
-                pane: 'pane_LGAsKaduna0',
-                opacity: 1,
-                color: 'rgba(0,0,0,0.56)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1.0, 
-                fillOpacity: 1,
-                fillColor: 'rgba(8,48,107,0.56)',
+                fillColor: 'rgba(8,48,107,0.59)',
             }
             }
         }
